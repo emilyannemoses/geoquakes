@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Geoquakes</title>
+</head>
+<body>
+    <h1>Geoquakes</h1>
+    <div class="wrapper">
+        <div class="heading">
+            <div class="getRecent">
+                <h2>Earthquakes in the past 24 hours</h2>
+                <button id="getRecent">Click me for recent</button>
+            </div>
+            <div class="getLocation">
+                <h2>Earthqakes near me</h2>
+                <button id="getLocation">Click me for location</button>
+                <div id="locating" class="loc"></div>
+                <div id="coordinates" class="coordinates"></div>
+                <a id="map" class="map"></a>
+            </div>
+        </div>
+    </div>
+    <div class="populate">
+        <div class="postRecent" id="mostRecent">
+        </div>
+        <div class="postLocation" id="fetchIt">
+        </div>
+    </div>
+    <script src="recentQuakes.js"></script>
+    <script src="localQuakes.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+h1 {
+	text-align: center;
+}
+
+.wrapper {
+	height: 200px;
+	width: 100vw;
+	margin: auto;
+}
+
+.heading {
+	height: auto;
+	width: auto;
+	margin: auto;
+	position: relative;
+}
+
+.getRecent {
+	float: left;
+	margin-left: 50px;
+	text-align: center;
+}
+
+.getLocation {
+	float: right;
+	margin-right: 50px;
+	text-align: center;
+}
+
+.populate {
+	height: 100vh;
+	width: 100vw;
+	margin: auto;
+}
+
+.postRecent {
+	float: left;
+	margin-left: 50px;
+}
+
+.postLocation {
+	float: right;
+	margin-right: 50px;
+}
+
