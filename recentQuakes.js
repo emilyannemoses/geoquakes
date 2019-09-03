@@ -36,11 +36,15 @@ function recentQuakes() {
         const mostRecent = document.getElementById('mostRecent');
         dataArray.map(function(earthquake) {
             const eachQuake = earthquake
+            const utcMilliSeconds = eachQuake.properties.time;
+            let theTime = new Date(0);
+            theTime.setUTCMilliseconds(utcMilliSeconds);
             mostRecent.innerHTML += `
             <hr></hr>
-                ${eachQuake.properties.title}<br>
-                ${eachQuake.properties.place}<br>
-                ${eachQuake.properties.mag}
+                <h5>${eachQuake.properties.title}</h5>
+                <div>${eachQuake.properties.place}</div>
+                <div>${theTime}</div>
+                MAGNITUDE ${eachQuake.properties.mag}<br>
             <br></br>
             `
         })
