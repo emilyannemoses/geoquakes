@@ -40,12 +40,14 @@ function recentQuakes() {
             let theTime = new Date(0);
             theTime.setUTCMilliseconds(utcMilliSeconds);
             mostRecent.innerHTML += `
-            <hr></hr>
-                <h5>${eachQuake.properties.title}</h5>
-                <div>${eachQuake.properties.place}</div>
-                <div>${theTime}</div>
-                MAGNITUDE ${eachQuake.properties.mag}<br>
-            <br></br>
+            <div class="terms">
+                <hr></hr>
+                    <h5>${eachQuake.properties.title}</h5>
+                    <div>${eachQuake.properties.place}</div>
+                    <div>${theTime}</div>
+                    MAGNITUDE ${eachQuake.properties.mag}<br>
+                <br></br>
+            </div>
             `
         })
     });
