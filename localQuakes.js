@@ -56,9 +56,10 @@ function localQuakes() {
                 <div class="terms">
                     <hr></hr>
                         <h5>${eachQuake.properties.title}</h5>
-                        <div>${eachQuake.properties.place}</div>
+                        <div>MAP: <a href="https://www.openstreetmap.org/#map=10/${eachQuake.geometry.coordinates[1]}/${eachQuake.geometry.coordinates[0]}" target="_blank">${eachQuake.properties.place}</a></div>
                         <div>${theTime}</div>
                         MAGNITUDE ${eachQuake.properties.mag}<br>
+                        <a href=${eachQuake.properties.url} target="_blank">More detailed information about this earthquake on USGS website.</a>
                     <br></br>
                 </div>
                 `
