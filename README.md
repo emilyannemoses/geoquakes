@@ -8,6 +8,4 @@ This simple site allows you to view global earthquakes in the past 24 hours, or 
 
 ## Will be adding features
 
-- Add links for each earthquake to show position on a map
-
-- Add styling to each earthquake listing for easier reading
+- Put an info button next to the input to alert user they must click a button to fetch the quakes before searching.

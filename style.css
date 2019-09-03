@@ -22,13 +22,13 @@ h1 {
 
 .getRecent {
 	float: left;
-	margin-left: 50px;
+	margin-left: 150px;
 	text-align: center;
 }
 
 .getLocation {
 	float: right;
-	margin-right: 50px;
+	margin-right: 170px;
 	text-align: center;
 }
 
@@ -40,23 +40,21 @@ h1 {
 
 .postRecent {
 	float: left;
-	margin-left: 50px;
+	margin-left: 150px;
 }
 
 .postLocation {
 	float: right;
-	margin-right: 50px;
+	margin-right: 150px;
 }
 
 .search {
 	border: 0;
-	padding: 0;
-	margin: 0;
 	height: 40px;
-	width: 100vw;
-	margin: auto;
+	width: 400px;
+	margin-left: 50px;
 	font-size: 20px;
 	font-weight: 300;
 	text-align: center;
-	border-bottom: 1px solid black;
+	border-bottom: 1px solid lightgray;
 }

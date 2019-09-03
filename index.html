@@ -8,6 +8,7 @@
     <title>Geoquakes</title>
 </head>
 <body>
+    <input autocomplete="off" id="search" class="search" type="text" placeholder="Search quakes (e.g. Alaska or 2.3)">
     <h1>Geoquakes</h1>
     <div class="wrapper">
         <div class="heading">
@@ -18,13 +19,14 @@
             <div class="getLocation">
                 <h2>Earthquakes near me</h2>
                 <button id="getLocation">Get quakes near me</button>
+                <br></br>
                 <div id="locating" class="loc"></div>
                 <div id="coordinates" class="coordinates"></div>
+                <br>
                 <a id="map" class="map"></a>
             </div>
         </div>
     </div>
-    <input autocomplete="off" id="search" class="search" type="text" placeholder="Search">
     <div id="searchTerms" class="searchTerms populate">
         <div class="postRecent" id="mostRecent">
         </div>
