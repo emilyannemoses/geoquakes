@@ -11,3 +11,5 @@ This simple site allows you to view global earthquakes in the past 24 hours, or 
 - Put an info button next to the input to alert user they must click a button to fetch the quakes before searching.
 
 - Add flexbox so columns don't overlap on smaller screens.
+
+- Fix the way the time and date is displayed to remove the time zone.

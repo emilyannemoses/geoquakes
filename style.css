@@ -8,7 +8,7 @@ h1 {
 }
 
 .wrapper {
-	height: 150px;
+	height: auto;
 	width: 100vw;
 	margin: auto;
 }
@@ -21,33 +21,31 @@ h1 {
 }
 
 .getRecent {
-	float: left;
-	margin-left: 75px;
 	text-align: center;
 }
 
-.getLocation {
+/* .getLocation {
 	float: right;
 	margin-right: 75px;
 	text-align: center;
 	position: relative;
-}
+} */
 
 .populate {
 	height: 100vh;
-	width: 100vw;
+	width: 90vw;
 	margin: auto;
 }
 
 .postRecent {
-	float: left;
-	margin-left: 75px;
+	margin: 25px 100px;
+	text-align: center;
 }
 
-.postLocation {
+/* .postLocation {
 	float: right;
 	margin-right: 75px;
-}
+} */
 
 .search {
 	border: 0;
