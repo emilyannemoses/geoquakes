@@ -48,17 +48,21 @@ function localQuakes() {
             const dataArray = data.features;
             const quake = document.getElementById('fetchIt')
             dataArray.map(function(earthquake) {
-                const eachQuake = earthquake;
+                const eachQuake = earthquake
                 const utcMilliSeconds = eachQuake.properties.time;
-                let theTime = new Date(0);
-                theTime.setUTCMilliseconds(utcMilliSeconds);
+                const seconds = Math.round(utcMilliSeconds / 1000);
+                const theTime = new Date(0);
+                theTime.setUTCSeconds(seconds);
+                const stringTime = theTime.toString()
+                const splitStringTime = stringTime.split(' ')
+                const newTime = `${splitStringTime[0]} ${splitStringTime[1]} ${splitStringTime[2]} ${splitStringTime[3]} ${splitStringTime[4]}`
                 quake.innerHTML += `
                 <div class="terms">
                     <hr></hr>
                         <h4>${eachQuake.properties.title}</h4>
-                        <div>🌍 <a href="https://www.openstreetmap.org/#map=10/${eachQuake.geometry.coordinates[1]}/${eachQuake.geometry.coordinates[0]}" target="_blank">${eachQuake.properties.place}</a></div>
-                        <div>🕔 ${theTime}</div>
                         <div>📈 ${eachQuake.properties.mag}</div>
+                        <div>🌍 <a href="https://www.openstreetmap.org/#map=10/${eachQuake.geometry.coordinates[1]}/${eachQuake.geometry.coordinates[0]}" target="_blank">${eachQuake.properties.place}</a></div>
+                        <div>🕔 ${newTime}</div>
                         <br></br>
                         <a href=${eachQuake.properties.url} target="_blank">See more detailed information about this earthquake on the USGS website.</a>
                     <br></br>

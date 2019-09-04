@@ -9,14 +9,19 @@
 </head>
 <body>
     <input autocomplete="off" id="search" class="search" type="text" placeholder="Search quakes (e.g. Alaska or 2.3)">
-    <h1>Geoquakes</h1>
     <div class="wrapper">
+        <h1>Geoquakes</h1>
         <div class="heading">
-            <div class="getRecent">
+            <input type="checkbox" class="toggle" id="toggle" />
+            <label for="toggle">
+                <span class="off" id="off">Recent Quakes</span>
+                <span class="on" id="on">Local Quakes</span>
+            </label>
+            <div class="getRecent" id="showRecentButton">
                 <h2>Global quakes in the past 24 hours</h2>
                 <button id="getRecent">Get all recent quakes</button>
             </div>
-            <!-- <div class="getLocation">
+            <div class="getLocation" id="showLocationButton" style="display:none;">
                 <h2>Earthquakes near me</h2>
                 <button id="getLocation">Get quakes near me</button>
                 <br></br>
@@ -24,17 +29,33 @@
                 <div id="coordinates" class="coordinates"></div>
                 <br>
                 <a id="map" class="map"></a>
-            </div> -->
+            </div>
         </div>
     </div>
     <div id="searchTerms" class="searchTerms populate">
         <div class="postRecent" id="mostRecent">
         </div>
-        <!-- <div class="postLocation" id="fetchIt">
-        </div> -->
+        <div class="postLocation" id="fetchIt">
+        </div>
     </div>
+    <script>
+        function onButton() {
+            showRecentButton.style.display = 'none';
+            showLocationButton.style.display = 'block';
+            mostRecent.style.display = 'none';
+            fetchIt.style.display = 'block';
+        }
+        function offButton() {
+            showRecentButton.style.display = 'block';
+            showLocationButton.style.display = 'none';
+            mostRecent.style.display = 'block';
+            fetchIt.style.display = 'none';
+        }
+        off.addEventListener('click', onButton);
+        on.addEventListener('click', offButton)
+    </script>
     <script src="recentQuakes.js"></script>
-    <!-- <script src="localQuakes.js"></script> -->
+    <script src="localQuakes.js"></script>
     <script src="search.js"></script>
 </body>
 </html>

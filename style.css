@@ -18,18 +18,16 @@ h1 {
 	width: auto;
 	margin: auto;
 	position: relative;
+	text-align: center;
 }
 
 .getRecent {
 	text-align: center;
 }
 
-/* .getLocation {
-	float: right;
-	margin-right: 75px;
+.getLocation {
 	text-align: center;
-	position: relative;
-} */
+}
 
 .populate {
 	height: 100vh;
@@ -42,10 +40,10 @@ h1 {
 	text-align: center;
 }
 
-/* .postLocation {
-	float: right;
-	margin-right: 75px;
-} */
+.postLocation {
+	margin: 25px 100px;
+	text-align: center;
+}
 
 .search {
 	border: 0;
@@ -56,4 +54,58 @@ h1 {
 	font-weight: 300;
 	text-align: center;
 	border-bottom: 1px solid lightgray;
+}
+
+input[type="checkbox"].toggle {
+	opacity: 0;
+	position: absolute;
+	left: -99999px;
+}
+input[type="checkbox"].toggle + label {
+	height: 40px;
+	line-height: 40px;
+	background-color: rgb(131, 126, 212);
+	padding: 0px 16px;
+	display: inline-block;
+	position: relative;
+	cursor: pointer;
+	transition: all 0.25s ease-in;
+	box-shadow: inset 0px 0px 2px rgba(0, 0, 0, .5);
+}
+input[type="checkbox"].toggle + label:before, input[type="checkbox"].toggle + label:hover:before {
+	content: ' ';
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	width: 46px;
+	height: 36px;
+	background: #fff;
+	z-index: 2;
+	transition: all 0.25s ease-in;
+}
+input[type="checkbox"].toggle + label .off, input[type="checkbox"].toggle + label .on {
+	color: #fff;
+}
+input[type="checkbox"].toggle + label .off {
+	margin-left: 46px;
+	display: inline-block;
+}
+input[type="checkbox"].toggle + label .on {
+	display: none;
+}
+input[type="checkbox"].toggle:checked + label .off {
+	display: none;
+}
+input[type="checkbox"].toggle:checked + label .on {
+	margin-right: 46px;
+	display: inline-block;
+}
+input[type="checkbox"].toggle:checked + label, input[type="checkbox"].toggle:focus:checked + label {
+	background-color: #67a5ec;
+}
+input[type="checkbox"].toggle:checked + label:before, input[type="checkbox"].toggle:focus:checked + label:before, input[type="checkbox"].toggle:checked + label:hover:before, input[type="checkbox"].toggle:focus:checked + label:hover:before {
+	background-position: 0 0;
+	top: 2px;
+	left: 100%;
+	margin-left: -48px;
 }
