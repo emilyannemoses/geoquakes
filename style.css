@@ -22,14 +22,15 @@ h1 {
 
 .getRecent {
 	float: left;
-	margin-left: 150px;
+	margin-left: 75px;
 	text-align: center;
 }
 
 .getLocation {
 	float: right;
-	margin-right: 150px;
+	margin-right: 75px;
 	text-align: center;
+	position: relative;
 }
 
 .populate {
@@ -40,12 +41,12 @@ h1 {
 
 .postRecent {
 	float: left;
-	margin-left: 150px;
+	margin-left: 75px;
 }
 
 .postLocation {
 	float: right;
-	margin-right: 150px;
+	margin-right: 75px;
 }
 
 .search {
