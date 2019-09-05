@@ -34,6 +34,7 @@ function localQuakes() {
         const latitude = position.coords.latitude;
         const longitude = position.coords.longitude;
         locating.textContent = '';
+        locating2.textContent = '';
         map.href = `https://www.openstreetmap.org/#map=18/${latitude}/${longitude}`
         map.target = '_blank';
         map.innerText = 'Click to see the map of your location!';
@@ -77,7 +78,8 @@ function localQuakes() {
     if(!navigator.geolocation) {
         locating.textContent = 'For the love of all that is good, please cease use of Internet Explorer!';
     } else {
-        locating.textContent = 'The satellites are currently triangulating to calculate your exact position on Planet Earth';
+        locating.textContent = `The satellites are currently triangulating to calculate your exact position on Planet Earth.`;
+        locating2.textContent = `If it's taking a while, try resizing your browser and be sure to click 'Allow' when it asks to use your location.`;
         navigator.geolocation.getCurrentPosition(success, error);
     }
 }

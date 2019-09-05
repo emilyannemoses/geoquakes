@@ -49,11 +49,22 @@ h1 {
 	border: 0;
 	height: 40px;
 	width: 400px;
-	margin-left: 50px;
+	margin-left: 10px;
 	font-size: 20px;
 	font-weight: 300;
 	text-align: center;
 	border-bottom: 1px solid lightgray;
+}
+
+button {
+	height: 35px;
+	font-size: 15px;
+	background-color: rgb(226, 113, 113);
+	padding: 0px 16px;
+	display: inline-block;
+	position: relative;
+	cursor: pointer;
+	color: white;
 }
 
 input[type="checkbox"].toggle {
