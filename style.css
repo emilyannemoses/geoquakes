@@ -110,11 +110,11 @@ input[type="checkbox"].toggle:checked + label:before, input[type="checkbox"].tog
 	margin-left: -48px;
 }
 
-@media (min-width: 401px) {
+@media (max-width: 475px) {
 	.search {
 		border: 0;
 		height: 40px;
-		width: 400px;
+		width: 90vw;
 		font-size: 20px;
 		font-weight: 300;
 		text-align: center;
