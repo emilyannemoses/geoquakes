@@ -111,12 +111,16 @@ input[type="checkbox"].toggle:checked + label:before, input[type="checkbox"].tog
 }
 
 @media (max-width: 475px) {
+	body {
+		margin: 0;
+	}
 	.search {
 		border: 0;
 		height: 40px;
-		width: 90vw;
+		width: 290px;
 		font-size: 20px;
 		font-weight: 300;
+		margin: auto;
 		text-align: center;
 		border-bottom: 1px solid lightgray;
 	}
